@@ -21,7 +21,7 @@ import org.junit.Test;
 public class TestJUnit {
 	
 	static String nombreEquipo1 = "FC Coruña";
-	static String nombreEquipo2 = "UCAM Murciaa";
+	static String nombreEquipo2 = "UCAM Murcia";
 	
 	static Jugador j1;
 	static Jugador j2;
