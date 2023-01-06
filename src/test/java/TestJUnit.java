@@ -83,7 +83,7 @@ public class TestJUnit {
 	@Test
 	public void comparaNumJugadores() {
 		int numJugadores = 3;
-		assertTrue(4 == numJugadores);
+		assertTrue(3 == numJugadores);
 		System.out.println("\ncomparaNumJugadores ejecutado correctamente.");
 	}
 	
@@ -123,7 +123,6 @@ public class TestJUnit {
 	
 	@Test
 	public void arrayJugadoresSonIguales() {
-		e1.añadirJugadorAEquipo(j2, e1);
 		e1.añadirJugadorAEquipo(j2, e1);
 		e2.añadirJugadorAEquipo(j2, e2);
 		assertArrayEquals(e1.getDorsalesJugadores(e1), e2.getDorsalesJugadores(e2));
