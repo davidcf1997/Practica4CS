@@ -1,5 +1,3 @@
-package ucam.practica4.cs;
-
 import java.util.ArrayList;
 
 public class Main {

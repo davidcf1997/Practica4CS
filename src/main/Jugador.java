@@ -1,5 +1,3 @@
-package ucam.practica4.cs;
-
 public class Jugador {
 	
 	private String nombre;
