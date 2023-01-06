@@ -1,5 +1,3 @@
-package ucam.practica3.cs;
-
 import static org.junit.jupiter.api.*;
 import java.util.ArrayList;
 

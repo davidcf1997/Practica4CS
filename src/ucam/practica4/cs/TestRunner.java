@@ -1,8 +1,6 @@
-package ucam.practica4.cs;
+package ucam.practica3.cs;
 
-import org.junit.runner.JUnitCore;
-import org.junit.runner.Result;
-import org.junit.runner.notification.Failure;
+import org.junit.*;
 
 public class TestRunner {
 
