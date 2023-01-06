@@ -11,7 +11,7 @@ public class Main {
 		Jugador j1 = new Jugador("Jose", "España", 9, 25);
 		Jugador j2 = new Jugador(nombre, "España", 10, 17);
 		
-		ArrayList<Jugador> jugadores = new ArrayList<>();
+		ArrayList<Jugador> jugadores = new ArrayList<Jugador>();
 		try {
 			jugadores.add(j1);
 			jugadores.add(j2);

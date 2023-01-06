@@ -15,14 +15,14 @@ import org.junit.Test;
 public class TestPartition1 {
 	
 	Equipo e;
-	ArrayList<Jugador> jugadoresPrueba = new ArrayList<>();
+	ArrayList<Jugador> jugadoresPrueba = new ArrayList<Jugador>();
 	Jugador jugadorPrueba = new Jugador("David", "España", 10, 25);
 	
 	@Before
 	public void set() {
 		e = new Equipo(null, 0, null);
 		
-		ArrayList<Jugador> jugadores = new ArrayList<>();
+		ArrayList<Jugador> jugadores = new ArrayList<Jugador>();
 		String nombre = "FC Vigo";
 		int anhoFundacion = 1980;
 		Jugador j2 = new Jugador("James", "Inglaterra", 2, 35);

@@ -47,7 +47,7 @@ public class TestJUnit {
 	
 	@Before
 	public void asignar() {
-		jugadores = new ArrayList<>();
+		jugadores = new ArrayList<Jugador>();
 		jugadores.add(j1);
 		jugadores.add(j2);
 		

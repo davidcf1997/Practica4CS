@@ -89,7 +89,7 @@ public class Equipo {
 	public int eliminarTodosJugadores(Equipo e) {
 		int exito = 0;
 		
-		ArrayList<Jugador> jugadores = new ArrayList<>();
+		ArrayList<Jugador> jugadores = new ArrayList<Jugador>();
 		e.setJugadores(jugadores);
 		
 		return exito;
