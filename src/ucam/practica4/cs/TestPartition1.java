@@ -1,9 +1,8 @@
-package ucam.practica3.cs;
+package ucam.practica4.cs;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
@@ -13,8 +12,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestPartition2 {
-
+public class TestPartition1 {
+	
 	Equipo e;
 	ArrayList<Jugador> jugadoresPrueba = new ArrayList<>();
 	Jugador jugadorPrueba = new Jugador("David", "España", 10, 25);
@@ -37,31 +36,32 @@ public class TestPartition2 {
 		e.añadirJugadorAEquipo(j2, e);
 		e.eliminarJugador(e, j2);
 		
-		e.añadirJugadorAEquipo(jugadorPrueba, e);
+		e.añadirJugadorAEquipo(jugadorPrueba, e);		
 	}
 
 	@Test
-	public void validarNombre() {
-		assertEquals("FC Vigo ", e.getNombre());
-		System.out.println("\nvalidarNombre ejecutado correctamente.");
-	}
-	
-	@Test
-	public void validarAnhoFundacion() {
-		assertSame("1980", e.getAnhoFundacion());
-		System.out.println("\nvalidarAnhoFundacion ejecutado correctamente.");
-	}
-	
-	@Test
-	public void validarArrayJugadores() {
+	public void arrayJugadoresNoEsNulo() {
 		assertNotNull(e.getJugadores());
-		System.out.println("\nvalidarArrayJugadores ejecutado correctamente.");
+		System.out.println("\narrayJugadoresNoEsNulo ejecutado correctamente.");
 	}
 	
 	@Test
-	public void compararJugadores() {
-		assertFalse(jugadoresPrueba.equals(e.getJugadores()));
-		System.out.println("\ncompararJugadores ejecutado correctamente.");
+	public void arraysJugadoresSonIguales() {
+		assertNotEquals(jugadoresPrueba, e.getJugadores());
+		System.out.println("\narraysJugadoresSonIguales ejecutado correctamente.");
+	}
+	
+	@Test
+	public void jugadoresSonIguales() {
+		jugadoresPrueba.add(jugadorPrueba);
+		assertEquals(jugadoresPrueba.get(0), e.getJugadores().get(0));
+		System.out.println("\njugadoresSonIguales ejecutado correctamente.");
+	}
+	
+	@Test
+	public void tamanhoArrayJugadoresEsDistinto() {
+		assertTrue(jugadoresPrueba.size() == e.getJugadores().size());
+		System.out.println("\ntamanhoArrayJugadoresEsDistinto ejecutado correctamente.");
 	}
 	
 	@After

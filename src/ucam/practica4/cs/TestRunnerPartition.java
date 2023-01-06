@@ -1,13 +1,13 @@
-package ucam.practica3.cs;
+package ucam.practica4.cs;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
-public class TestRunner {
+public class TestRunnerPartition {
 
 	public static void main(String[] args) {
-		 Result resultadoError = JUnitCore.runClasses(TestJUnit.class);
+		 Result resultadoError = JUnitCore.runClasses(TestPartition1.class, TestPartition2.class);
 		 for (Failure fallo : resultadoError.getFailures()) {
 			 System.out.println("\n"+fallo.toString());
 		 }

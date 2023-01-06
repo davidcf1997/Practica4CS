@@ -1,4 +1,4 @@
-package ucam.practica3.cs;
+package ucam.practica4.cs;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertFalse;
