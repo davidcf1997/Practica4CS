@@ -84,6 +84,7 @@ public class TestJUnit {
 	public void comparaNumJugadores() {
 		int numJugadores = 3;
 		assertTrue(numJugadores == numJugadores);
+		assertTrue(3 == numJugadores);
 		System.out.println("\ncomparaNumJugadores ejecutado correctamente.");
 	}
 	
