@@ -83,7 +83,11 @@ public class TestJUnit {
 	@Test
 	public void comparaNumJugadores() {
 		int numJugadores = 3;
+<<<<<<< HEAD
 		assertTrue(numJugadores == numJugadores);
+=======
+		assertTrue(3 == numJugadores);
+>>>>>>> branch 'main' of https://github.com/davidcf1997/Practica4CS.git
 		System.out.println("\ncomparaNumJugadores ejecutado correctamente.");
 	}
 	
